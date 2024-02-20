@@ -53,7 +53,6 @@ section {
 footer {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
     grid-area: ft;
     background-color: white;
 }
@@ -80,5 +79,5 @@ img {
 }
 
 i {
-    
+    margin-left: 5px;
 }

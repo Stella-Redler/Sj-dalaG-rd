@@ -7,7 +7,7 @@ body {
     gap: 2px;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 25% 10% 40% 35% 60% 10%;
+    grid-template-rows: 25% 10% 35% 35% 60% 7%;
     height: 100vh;
     grid-template-areas:
     'hd'
@@ -36,6 +36,8 @@ nav {
 }
 
 main {
+    display: block;
+    justify-content: center;
     grid-area: mn;
     background-color: white;
 }
@@ -79,5 +81,16 @@ img {
 }
 
 i {
-    margin-left: 5px;
+    margin-left: 20px;
+}
+
+h2 {
+    font-size: 35px;
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
 }

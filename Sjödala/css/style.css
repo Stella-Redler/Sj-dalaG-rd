@@ -99,12 +99,17 @@ h3 {
 #senaste_nytt {
     display: flex;
     justify-content: space-evenly;
-    margin: 15px;
+    margin: 30px;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 #välkommen {
     margin-left: 20%;
     margin-right: 20%;
     font-weight: 200;
+}
+
+#senaste_nytt div {
+    width: 50%;
 }

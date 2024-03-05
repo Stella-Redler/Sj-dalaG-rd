@@ -1,115 +1,218 @@
-body {
-    margin: 0;
-    background-color: black;
+@media only screen and (min-width: 700px){
+    body {
+        margin: 0;
+        background-color: black;
+    }
+
+    #wrapper {
+        gap: 1px;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 25% 8% 35% 35% 95% 7%;
+        height: 100vh;
+        grid-template-areas:
+        'hd'
+        'nv'
+        'mn'
+        'as'
+        'sc'
+        'ft'
+        ;
+    }
+
+    header {
+        display: flex;
+        grid-area: hd;
+        background-color: white;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav {
+        display: flex;
+        grid-area: nv;
+        background-color: white;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    main {
+        display: block;
+        justify-content: center;
+        grid-area: mn;
+        background-color: white;
+    }
+
+    aside {
+        grid-area: as;
+        background-color: white;
+    }
+
+    section {
+        grid-area: sc;
+        background-color: white;
+        justify-content: space-evenly;
+    }
+
+    footer {
+        display: flex;
+        align-items: center;
+        grid-area: ft;
+        background-color: white;
+    }
+
+    .rubrik {
+        font-size: 60px;
+        text-transform: uppercase;
+        margin-right: 35%;
+    }
+
+    .logga {
+        width: 180px;
+        margin-left: 5px;
+    }
+
+    a {
+        font-size: 30px;
+        text-decoration: none;
+        color: black;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    i {
+        margin-left: 20px;
+    }
+
+    h2 {
+        font-size: 35px;
+        text-align: center;
+    }
+
+    h3 {
+        text-align: center;
+        font-size: 20px;
+        font-weight: 200;
+    }
+
+    #senaste_nytt {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 30px;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    #välkommen {
+        margin-left: 20%;
+        margin-right: 20%;
+        font-weight: 200;
+    }
+
+    #senaste_nytt div {
+        width: 45%;
+        border: 1px solid black;
+        margin: 10px;
+    }
 }
 
-#wrapper {
-    gap: 1px;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 25% 8% 35% 35% 80% 7%;
-    height: 100vh;
-    grid-template-areas:
-    'hd'
-    'nv'
-    'mn'
-    'as'
-    'sc'
-    'ft'
-    ;
-}
+@media only screen and (max-width: 700px){
+    body {
+        margin: 0;
+        background-color: black;
+    }
 
-header {
-    display: flex;
-    grid-area: hd;
-    background-color: white;
-    justify-content: space-between;
-    align-items: center;
-}
+    #wrapper {
+        gap: 1px;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 20% 40% 30% 90%;
+        height: 100vh;
+        grid-template-areas: 
+        'hd'
+        'mn'
+        'as'
+        'sc'
+        ;
+    }
 
-nav {
-    display: flex;
-    grid-area: nv;
-    background-color: white;
-    justify-content: space-evenly;
-    align-items: center;
-}
+    header {
+        display: flex;
+        grid-area: hd;
+        background-color: white;
+        justify-content: space-between;
+        align-items: center;
+    }
 
-main {
-    display: block;
-    justify-content: center;
-    grid-area: mn;
-    background-color: white;
-}
+    main {
+        display: block;
+        justify-content: center;
+        grid-area: mn;
+        background-color: white;
+    }
 
-aside {
-    grid-area: as;
-    background-color: white;
-}
+    aside {
+        grid-area: as;
+        background-color: white;
+    }
 
-section {
-    grid-area: sc;
-    background-color: white;
-    justify-content: space-evenly;
-}
+    section {
+        grid-area: sc;
+        background-color: white;
+        justify-content: space-evenly;
+    }
 
-footer {
-    display: flex;
-    align-items: center;
-    grid-area: ft;
-    background-color: white;
-}
+    .rubrik {
+        font-size: 30px;
+        text-transform: uppercase;
+        margin-right: 35%;
+    }
 
-.rubrik {
-    font-size: 60px;
-    text-transform: uppercase;
-    margin-right: 35%;
-}
+    .logga {
+        width: 90px;
+        margin-left: 5px;
+    }
 
-.logga {
-    width: 180px;
-    margin-left: 5px;
-}
+    a {
+        font-size: 30px;
+        text-decoration: none;
+        color: black;
+    }
 
-a {
-    font-size: 30px;
-    text-decoration: none;
-    color: black;
-}
+    img {
+        width: 100%;
+    }
 
-img {
-    width: 100%;
-}
+    h2 {
+        font-size: 20px;
+        text-align: center;
+    }
 
-i {
-    margin-left: 20px;
-}
+    h3 {
+        text-align: center;
+        font-size: 15px;
+        font-weight: 200;
+    }
 
-h2 {
-    font-size: 35px;
-    text-align: center;
-}
+    #välkommen {
+        margin-left: 10%;
+        margin-right: 10%;
+        font-weight: 200;
+    }
+    
+    #senaste_nytt {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 0;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
 
-h3 {
-    text-align: center;
-    font-size: 20px;
-    font-weight: 200;
-}
-
-#senaste_nytt {
-    display: flex;
-    justify-content: space-evenly;
-    margin: 30px;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-#välkommen {
-    margin-left: 20%;
-    margin-right: 20%;
-    font-weight: 200;
-}
-
-#senaste_nytt div {
-    width: 50%;
+    #senaste_nytt div {
+        width: 50%;
+        border: 1px solid black;
+        margin: 5px;
+    }
 }

@@ -1,8 +1,9 @@
+body {
+    margin: 0;
+    background-color: black;
+}
+
 @media only screen and (min-width: 700px){
-    body {
-        margin: 0;
-        background-color: black;
-    }
 
     #wrapper {
         gap: 1px;
@@ -119,11 +120,6 @@
 }
 
 @media only screen and (max-width: 700px){
-    body {
-        margin: 0;
-        background-color: black;
-    }
-
     #wrapper {
         gap: 1px;
         display: grid;

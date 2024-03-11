@@ -213,14 +213,14 @@ main {
     h3 {
         text-align: center;
         font-size: 15px;
-        font-weight: 200;
+        font-weight: 500;
         font-family: "Roboto";
     }
 
     #välkommen {
         margin-left: 10%;
         margin-right: 10%;
-        font-weight: 200;
+        font-weight: 400;
         font-family: "Roboto";
     }
 

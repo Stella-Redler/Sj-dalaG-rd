@@ -6,8 +6,7 @@ body {
 }
 
 *,
-*::before,
-*::after {
+*::before,*::after {
     box-sizing: border-box;
     font-family: "Roboto";
 }
@@ -46,7 +45,6 @@ main {
 }
 
 @media only screen and (min-width: 700px) {
-
     #wrapper {
         display: flex;
         flex-direction: column;
@@ -56,6 +54,18 @@ main {
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+
+    aside {
+        display: none;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu-button {
+        display: none;
     }
 
     nav {
@@ -123,6 +133,11 @@ main {
 }
 
 @media  screen and (max-width: 700px) {
+    .wrapper {
+        grid-template-columns:  1fr;
+        grid-template-areas: "as mn";
+    }
+
     .rubrik {
         font-size: 30px;
         text-transform: uppercase;
@@ -140,25 +155,85 @@ main {
         color: black;
     }
 
+    aside {
+        display: none;
+    }
+
+    .wrapper {
+        grid-template-columns:  1fr;
+        grid-template-areas: "as mn";
+    }
+    
+    .menu {
+        height: 100vh;
+        width: 80vw;
+        background: hotpink;
+        position: fixed;
+        top: 0;
+        left: -90vw;
+        transition: left 0.3s;
+        box-shadow: 10px 0px 21px -10px black;
+        z-index: 10;
+    }
+    
+    .menu-button {
+        cursor: pointer;
+        display: inline;
+    }
+    
+    .menu-button i.material-icons {
+        font-size: 2.5rem;
+    }
+    
+    .show {
+        left: 0;
+    }
+    
+    .fade-layer {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: pink;
+        display: none;
+        z-index: 5;
+    }
+    
+    .fade-layer.visible {
+        display: block;
+    }
+
     h2 {
         font-size: 20px;
         text-align: center;
+        font-family: "Roboto";
     }
 
     h3 {
         text-align: center;
         font-size: 15px;
         font-weight: 200;
+        font-family: "Roboto";
     }
 
     #välkommen {
         margin-left: 10%;
         margin-right: 10%;
         font-weight: 200;
+        font-family: "Roboto";
     }
 
     #senaste_nytt {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+
+    footer {
+        display: none;
+    }
+
+    nav {
+        display: none;
     }
 }

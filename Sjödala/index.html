@@ -7,6 +7,7 @@
     <link href='https://unpkg.com/css.gg@2.0.0/icons/css/facebook.css' rel='stylesheet'>
     <link href='https://unpkg.com/css.gg@2.0.0/icons/css/instagram.css' rel='stylesheet'>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
     <div id="wrapper">
@@ -20,13 +21,35 @@
             <a target="_blank" href="personal.html">personal</a>
             <a target="_blank" href="aktiviteter.html">aktiviteter</a>
         </nav>
+        <nav class="menu">
+            <ul>
+                <li><a href="#">Item 1</a></li>
+                <li><a href="#">Item 2</a></li>
+                <li><a href="#">Item 3</a></li>
+                <li><a href="#">Item 4</a></li>
+                <li><a href="#">Item 5</a></li>
+            </ul>
+        </nav>
+    
+        <div class="fade-layer" onclick="showMenu()" role="button"></div>
+        <div class="menu-button" onclick="showMenu()" role="button">
+            <i class="material-icons">menu</i>
+        </div>
+        <div class="wrapper">
+            <aside>
+                <ul>
+                    <li><a href="#">Item 1</a></li>
+                    <li><a href="#">Item 2</a></li>
+                    <li><a href="#">Item 3</a></li>
+                    <li><a href="#">Item 4</a></li>
+                    <li><a href="#">Item 5</a></li>
+                </ul>
+            </aside>
         <main>
             <h2>Välkommen!</h2>
             <h3 id="välkommen">På Sjödala gård erbjuder vi ett stort utbud av olika aktiviteter för alla åldrar! Välj mellan en regelbunden eller engångsaktivitet. Med bara ett stenkast från storstaden blir gården en perfekt samlingspunkt. Ta ett dopp i sjön eller en lugn rytt i skogen, eller varför inte testa på vårt nya ridhus! Oavsett vad så finns det alltid utrymme för utveckling, vila och gemenskap året runt.</h3>
         </main>
-        <aside>
             <img src="img/tim-peterson-Az8P8lOcgPA-unsplash.jpg" alt="Hästar på fält" class="start-bild">
-        </aside>
         <section>
             <h2>Senaste nytt</h2>
             <div id="senaste_nytt">

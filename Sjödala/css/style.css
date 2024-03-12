@@ -26,7 +26,6 @@ body {
     background-color: rgba(0, 0, 0, 0.05);
     border-radius: 1rem 1rem;
     padding: 0.25rem;
-
 }
 
 #wrapper {
@@ -42,6 +41,26 @@ header {
 
 main {
     display: block;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.card div {
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 1rem 1rem;
+    padding: 0.25rem;
+}
+
+.img_våra_hästar {
+    width: 45%;
+    height: auto;
+    border-radius: 1rem 1rem;
 }
 
 @media only screen and (min-width: 700px) {
@@ -195,7 +214,7 @@ main {
         left: 0;
         right: 0;
         bottom: 0;
-        background-color: pink;
+        background-color: rgb(201, 219, 251);
         display: none;
         z-index: 5;
     }

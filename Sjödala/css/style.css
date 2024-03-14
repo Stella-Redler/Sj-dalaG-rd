@@ -40,7 +40,7 @@ header {
 }
 
 main {
-    display: block;
+    display: grid;
 }
 
 .card {
@@ -68,6 +68,10 @@ main {
     display: flex;
     width: 30%;
 }
+
+#prislista ul li {
+        list-style: none;
+    }
 
 @media only screen and (min-width: 700px) {
     #wrapper {
@@ -157,9 +161,16 @@ main {
     }
 
     #prislista {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
         margin-left: 20%;
         margin-right: 20%;
         font-weight: 400;
+        background-color: rgba(0, 0, 0, 0.05);
+        border-radius: 1rem 1rem;
+        padding: 0.25rem;
+        text-align: left;
     }
 }
 
@@ -249,10 +260,15 @@ main {
     }
 
     #prislista {
-        margin-left: 10%;
-        margin-right: 10%;
+        display: flex;
+        margin-left: 5%;
+        margin-right: 5%;
         font-weight: 400;
-        font-family: "Roboto";
+        background-color: rgba(0, 0, 0, 0.05);
+        border-radius: 1rem 1rem;
+        padding: 0.25rem;
+        text-align: left;
+        flex-wrap: nowrap;
     }
 
     #senaste_nytt {

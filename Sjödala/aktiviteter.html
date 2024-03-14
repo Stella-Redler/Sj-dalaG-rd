@@ -3,57 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aktiviteter</title>
+    <title>Sjödala gård</title>
     <link href='https://unpkg.com/css.gg@2.0.0/icons/css/facebook.css' rel='stylesheet'>
     <link href='https://unpkg.com/css.gg@2.0.0/icons/css/instagram.css' rel='stylesheet'>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
-    <div id="wrapper">
-        <header>
+    <header>
+        <img class="logga" src="img/Skärmbild_2024-02-20_092627-removebg-preview.png" alt="Logga">
+        <h1 class="rubrik">aktiviteter</h1>
+    </header>
+    <nav class="manu_row">
+        <a  href="index.html">startsida</a>
+        <a  href="våra_hästar.html">våra hästar</a>
+        <a href="personal.html">personal</a>
+        <a  href="aktiviteter.html">aktiviteter</a>
+    </nav>
+    <nav class="menu">
+        <div>
             <img class="logga" src="img/Skärmbild_2024-02-20_092627-removebg-preview.png" alt="Logga">
-            <h1 class="rubrik">Aktiviteter</h1>
-        </header>
-        <nav class="manu_row">
-            <a  href="index.html">startsida</a>
-            <a  href="våra_hästar.html">våra hästar</a>
-            <a  href="personal.html">personal</a>
-            <a  href="aktiviteter.html">aktiviteter</a>
-        </nav>
-        <nav class="menu">
-            <div>
-                <img class="logga" src="img/Skärmbild_2024-02-20_092627-removebg-preview.png" alt="Logga">
-                <ul>
-                    <li><a  href="index.html">startsida</a></li>
-                    <li><a  href="våra_hästar.html">våra hästar</a></li>
-                    <li><a  href="personal.html">personal</a></li>
-                    <li><a  href="aktiviteter.html">aktiviteter</a></li>
-                </ul>
-            </div>
-            <div class="menu_footer">
-                <a  href="https://www.instagram.com/"><i class="gg-instagram"></i></a>
-                <a  href="https://www.facebook.com/?locale=sv_SE"><i class="gg-facebook"></i></a>
-            </div>
-        </nav>
-
+            <ul>
+                <li><a  href="index.html">startsida</a></li>
+                <li><a  href="våra_hästar.html">våra hästar</a></li>
+                <li><a  href="personal.html">personal</a></li>
+                <li><a  href="aktiviteter.html">aktiviteter</a></li>
+            </ul>
+        </div>
+        <div class="menu_footer">
+            <a  href="https://www.instagram.com/"><i class="gg-instagram"></i></a>
+            <a  href="https://www.facebook.com/?locale=sv_SE"><i class="gg-facebook"></i></a>
+        </div>
+    </nav>
+    
     <div class="fade-layer" onclick="showMenu()" role="button"></div>
     <div class="menu-button" onclick="showMenu()" role="button">
         <i class="material-icons">menu</i>
     </div>
-    <div class="wrapper">
-        <aside>
-            <ul>
-                <li><a href="#">Item 1</a></li>
-                <li><a href="#">Item 2</a></li>
-                <li><a href="#">Item 3</a></li>
-                <li><a href="#">Item 4</a></li>
-                <li><a href="#">Item 5</a></li>
-            </ul>
-        </aside>
-        <main>main</main>
-        <aside>aside</aside>
-        <section>section</section>
+    <div class="wrapper"> 
+        <main>
+            <h2>Priser</h2>
+            <h3 id="prislista">
+                <ul>
+                    <li>medryttare</li>
+                    <li>fodervärd</li>
+                    <li>uteritt</li>
+                    <li>turridning</li>
+                    <li>privatlektion hage</li>
+                    <li>privatlektion paddock</li>
+                    <li>privatlektion manege</li>
+                </ul>
+            </h3>
+        </main>
+            <img src="img/annika-treial-e4WUwbcur7Y-unsplash.jpg" alt="Hästar på fält" class="start-bild">
+        <section>
+            <div id="senaste_nytt">
+                <div>
+                <h3>Medryttare</h3> <p> I dag har gården fått ett nytt tillskott när en imponerande häst gjorde sitt intåg.Den nya hästen, vars namn ännu inte avslöjats, har redan fångat uppmärksamheten hos gårdsfolket med sin majestätiska närvaro och kraftfulla steg.Andra djur samlades runt den för att hälsa medan den nya ankomsten verkade nyfiken på sin omgivning och redo att utforska sitt nya hem. Medan gården fortsätter att välkomna den nya medlemmen, ser alla fram emot att se vilka äventyr som väntar och vilka band som kommer att knytas med tiden.</p></div>
+
+                <div>
+                <h3>Fodervärd</h3> <p> Vi uppmanar alla att vara extra försiktiga och uppmärksamma på älgjakt som pågår i närheten. De kommande dagarna kan det förekomma jaktaktiviteter i området. 
+                För din egen säkerhet, se till att hålla dig till markerade stigar och undvik att vandra i skogar där jakt pågår. Det är också klokt att klä dig i synliga färger och använda hörselskydd om du befinner dig i närheten av jaktområden. Tack för din uppmärksamhet och ta hand om dig själv därute!</p></div>
+
+                <div>
+                <h3>Uteritt</h3> <p> På gården har det inträffat en olycklig händelse då ett antal getter har lyckats rymma från sin inhägnad. Gårdsägarna ber nu allmänheten om hjälp att hålla utkik efter de försvunna djuren. Getterna är vänliga och följsamma, men kan vara skygga gentemot främmande människor. 
+                Om du ser några getter som liknar beskrivningen – med brunaktig päls och v-formade horn – vädjar vi att du snarast kontaktar gården på det angivna telefonnumret. Var vänlig och undvik att försöka hantera djuren själv för att undvika att de skräms eller springer ännu längre bort.  
+                Gårdsägarna är tacksamma för all hjälp från lokalsamhället och hoppas på en snar återförening med de bortsprungna getterna.</p></div>
+
+                <div>
+                <h3>Turridning</h3> <p> Vi vill meddela alla hästägare hos oss att en hovslagare kommer att besöka stallet den 22:a mars för att sköta om hästarnas hovar. Detta är en viktig del av hästens hälsorutin och vi uppmanar alla att se till att deras hästar är tillgängliga för denna nödvändiga vård. 
+                Vänligen planera därefter och se till att era hästar är redo och tillgängliga för att bli omhändertagna av hovslagaren vid det angivna datumet och tidpunkten. För frågor eller för att schemalägga din hästs tid för hovvård, vänligen kontakta oss via mejl. Tack för ert samarbete för att se till att våra hästar förblir friska och välmående.</p></div>
+
+                <div>
+                <h3>Privatlektion hage</h3> <p> Vi vill meddela alla hästägare hos oss att en hovslagare kommer att besöka stallet den 22:a mars för att sköta om hästarnas hovar. Detta är en viktig del av hästens hälsorutin och vi uppmanar alla att se till att deras hästar är tillgängliga för denna nödvändiga vård. Vänligen planera därefter och se till att era hästar är redo och tillgängliga för att bli omhändertagna av hovslagaren vid det angivna datumet och tidpunkten. För frågor eller för att schemalägga din hästs tid för hovvård, vänligen kontakta oss via mejl. Tack för ert samarbete för att se till att våra hästar förblir friska och välmående.</p></div>
+
+                <div>
+                <h3>Privatlektion paddock</h3> <p> Vi vill meddela alla hästägare hos oss att en hovslagare kommer att besöka stallet den 22:a mars för att sköta om hästarnas hovar. Detta är en viktig del av hästens hälsorutin och vi uppmanar alla att se till att deras hästar är tillgängliga för denna nödvändiga vård. Vänligen planera därefter och se till att era hästar är redo och tillgängliga för att bli omhändertagna av hovslagaren vid det angivna datumet och tidpunkten. För frågor eller för att schemalägga din hästs tid för hovvård, vänligen kontakta oss via mejl. Tack för ert samarbete för att se till att våra hästar förblir friska och välmående.</p></div>
+
+                <div>
+                <h3>Privatlektion manege</h3> <p> Vi vill meddela alla hästägare hos oss att en hovslagare kommer att besöka stallet den 22:a mars för att sköta om hästarnas hovar. Detta är en viktig del av hästens hälsorutin och vi uppmanar alla att se till att deras hästar är tillgängliga för denna nödvändiga vård. Vänligen planera därefter och se till att era hästar är redo och tillgängliga för att bli omhändertagna av hovslagaren vid det angivna datumet och tidpunkten. För frågor eller för att schemalägga din hästs tid för hovvård, vänligen kontakta oss via mejl. Tack för ert samarbete för att se till att våra hästar förblir friska och välmående.</p></div>
+            </div>
+        </section>
         <footer>
             <a  href="https://www.instagram.com/"><i class="gg-instagram"></i></a>
             <a  href="https://www.facebook.com/?locale=sv_SE"><i class="gg-facebook"></i></a>

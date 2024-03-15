@@ -74,17 +74,6 @@ main {
     }
 
 @media only screen and (min-width: 700px) {
-    #wrapper {
-        display: flex;
-        flex-direction: column;
-    }
-
-    header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
     aside {
         display: none;
     }
@@ -193,11 +182,6 @@ main {
 
     aside {
         display: none;
-    }
-
-    .wrapper {
-        grid-template-columns:  1fr;
-        grid-template-areas: "as mn";
     }
     
     .menu {

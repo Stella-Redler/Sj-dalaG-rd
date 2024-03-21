@@ -52,7 +52,7 @@ main {
 }
 
 .card div {
-    background-color: rgba(0, 0, 0, 0.05);
+    background-color: #0000000d;
     border-radius: 1rem 1rem;
     padding: 0.25rem;
 }
@@ -155,11 +155,14 @@ main {
         grid-template-rows: 1fr;
         margin-left: 20%;
         margin-right: 20%;
+        margin-bottom: 10px;
         font-weight: 400;
         background-color: rgba(0, 0, 0, 0.05);
         border-radius: 1rem 1rem;
         padding: 0.25rem;
         text-align: left;
+        font-size: 20px;
+        font-weight: 400;
     }
 }
 
@@ -187,7 +190,7 @@ main {
     .menu {
         height: 100vh;
         width: 60vw;
-        background: rgb(225, 247, 255);
+        background: #e1f7ff;
         position: fixed;
         top: 0;
         left: -90vw;
@@ -247,12 +250,14 @@ main {
         display: flex;
         margin-left: 5%;
         margin-right: 5%;
-        font-weight: 400;
+        margin-bottom: 5px;
         background-color: rgba(0, 0, 0, 0.05);
         border-radius: 1rem 1rem;
         padding: 0.25rem;
         text-align: left;
         flex-wrap: nowrap;
+        font-size: 15px;
+        font-weight: 500;
     }
 
     #senaste_nytt {

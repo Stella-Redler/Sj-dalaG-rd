@@ -57,7 +57,7 @@ main {
     padding: 0.25rem;
 }
 
-.img_våra_hästar {
+.img_vara_hastar {
     display: flex;
     width: 45%;
     height: auto;
@@ -143,7 +143,7 @@ main {
         font-size: 18px;
     }
 
-    #välkommen {
+    #valkommen {
         margin-left: 20%;
         margin-right: 20%;
         font-weight: 400;
@@ -239,7 +239,7 @@ main {
         font-family: "Roboto";
     }
 
-    #välkommen {
+    #valkommen {
         margin-left: 10%;
         margin-right: 10%;
         font-weight: 400;

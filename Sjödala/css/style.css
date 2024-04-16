@@ -28,6 +28,20 @@ body {
     padding: 0.25rem;
 }
 
+#cards_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+    padding: 1rem;
+}
+#cards_container div {
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 1rem 1rem;
+    padding: 0.25rem;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.142);
+}
+
 #wrapper {
     display: flex;
     flex-direction: column;
@@ -59,9 +73,10 @@ main {
 
 .img_vara_hastar {
     display: flex;
-    width: 45%;
+    max-width: 100%;;
     height: auto;
-    border-radius: 1rem 1rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
 }
 
 .profilbild {
@@ -292,5 +307,13 @@ main {
         margin-top: 250%;
         gap: 0.5rem;
         padding: 0.75rem;
+    }
+
+    #cards_container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 1rem;
+        padding: 1rem;
     }
 }

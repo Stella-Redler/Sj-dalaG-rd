@@ -40,6 +40,18 @@ body {
     border-radius: 1rem 1rem;
     padding: 0.25rem;
     box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.142);
+    position: relative;
+}
+
+hr {
+    border: none; 
+    height: 2px; 
+    background-color: rgba(160, 219, 255, 0.393);
+    width: auto;
+    height: 170px;
+    z-index: 1;
+    margin-top: 0;
+    border-radius: 1rem 1rem 0rem 0rem;
 }
 
 #wrapper {
@@ -67,7 +79,13 @@ main {
 
 .profilbild {
     display: flex;
+    background-color: rgba(160, 219, 255, 0.548);
+    border-radius: 50%;
     width: 30%;
+    margin-left: 35%;
+    position: absolute;
+    top: 4%;
+    left: 0;
 }
 
 #prislista ul li {

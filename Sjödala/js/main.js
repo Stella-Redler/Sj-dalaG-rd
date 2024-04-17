@@ -1,3 +1,5 @@
+document.getElementsByClassName(".menu-button").addEventListener("click", displayDate);
+
 function showMenu() {
     let menu = document.querySelector(".menu")
     menu.classList.toggle("show");
@@ -6,10 +8,7 @@ function showMenu() {
     layer.classList.toggle("visible")
 }
 
-var modal = document.getElementById('myModal');
-var images = document.getElementsByClassName('img_vara_hastar');
-
-for(){
+/*for(let i = 0; i < img_vara_hastar.length; i+=1){
     var img = document.getElementById('myImg');
     var modalImg = document.getElementById("img01");
     var captionText = document.getElementById("caption");
@@ -24,4 +23,4 @@ for(){
     span.onclick = function() { 
         modal.style.display = "none";
     }
-}
+}*/

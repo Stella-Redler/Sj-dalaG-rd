@@ -1,5 +1,3 @@
-document.getElementsByClassName(".menu-button").addEventListener("click", displayDate);
-
 function showMenu() {
     let menu = document.querySelector(".menu")
     menu.classList.toggle("show");
@@ -10,15 +8,17 @@ function showMenu() {
 
 var modal = document.getElementById("myModal");
 
-var img = document.getElementsByClassName(".img_vara_hastar");
+var img = document.getElementsByClassName("img_vara_hastar");
 var modalImg = document.getElementById("img01");
-var captionText = document.getElementById("caption");
-img.onclick = function(){
+for (let i = 0; i < img.length; i++) {
+  img[i].addEventListener("click", function show_img() {
   modal.style.display = "block";
-  modalImg.src = this.src;
-  captionText.innerHTML = this.alt;
+  modalImg.src = img[i].src;
+});
 }
 
-span.onclick = function() { 
+var span = document.getElementsByClassName("close")[0];
+span.addEventListener("click", function() {
     modal.style.display = "none";
 }
+)

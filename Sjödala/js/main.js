@@ -7,7 +7,6 @@ function showMenu() {
 }
 
 var modal = document.getElementById("myModal");
-
 var img = document.getElementsByClassName("img_vara_hastar");
 var modalImg = document.getElementById("img01");
 for (let i = 0; i < img.length; i++) {
@@ -17,8 +16,8 @@ for (let i = 0; i < img.length; i++) {
 });
 }
 
-var span = document.getElementsByClassName("close")[0];
-span.addEventListener("click", function() {
-    modal.style.display = "none";
-}
-)
+var span = document.getElementsByClassName("close");
+if (span.length > 0){
+  span[0].addEventListener("click", function() {
+      modal.style.display = "none";
+})}

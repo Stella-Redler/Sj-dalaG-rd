@@ -26,6 +26,7 @@ body {
     background-color: rgba(0, 0, 0, 0.05);
     border-radius: 1rem 1rem;
     padding: 0.25rem;
+    padding: 2.5%;
 }
 
 #cards_container {
@@ -41,6 +42,18 @@ body {
     padding: 0.25rem;
     box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.142);
     position: relative;
+}
+
+#cards_container div p {
+    padding: 0.5rem;
+}
+
+#senaste_nytt h3 {
+    font-weight: bold;
+}
+
+#cards_container div h3 {
+    font-weight: bold;
 }
 
 hr {
@@ -220,6 +233,8 @@ main {
         margin-left: 20%;
         margin-right: 20%;
         font-weight: 400;
+        text-align: left;
+        margin-top: 0;
     }
 
     #prislista {
@@ -317,6 +332,8 @@ main {
         margin-right: 10%;
         font-weight: 400;
         font-family: "Roboto";
+        text-align: left;
+        margin-top: 0;
     }
 
     #prislista {

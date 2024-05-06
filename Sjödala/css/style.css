@@ -39,13 +39,13 @@ body {
 #cards_container div {
     background-color: rgba(0, 0, 0, 0.05);
     border-radius: 1rem 1rem;
-    padding: 0.25rem;
+    padding: 0.5rem;
     box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.142);
     position: relative;
 }
 
 #cards_container div p {
-    padding: 0.5rem;
+    padding: 1rem;
 }
 
 #senaste_nytt h3 {

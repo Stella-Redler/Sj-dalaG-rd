@@ -84,13 +84,14 @@ main {
 
 .img_vara_hastar {
     display: flex;
-    max-width: 100%;;
-    height: auto;
+    max-width: 100%;
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
+    height: 60%;
+    object-fit: cover;
 }
 
 .img_vara_hastar :hover {
